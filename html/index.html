@@ -3,71 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Concessionária de carros de alta qualidade, com atendimento especializado e diversos modelos disponíveis.">
-    <meta name="author" content="Sua Concessionária">
-    <title>Concessionária XYZ - Página Principal</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- Link para o arquivo de estilo CSS -->
+    <meta name="description" content="Concessionária de carros de alta qualidade, com modelos exclusivos e atendimento especializado.">
+    <meta name="author" content="CarDeal">
+    <title>CarDeal</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-
     <!-- Cabeçalho -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo da Concessionária XYZ">
+            <img src="logo.png" alt="Logo da CarDeal">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#historia">História</a></li>
-                <li><a href="modelos.html">Modelos de Veículos</a></li>
-                <li><a href="especificacoes.html">Especificações</a></li>
-                <li><a href="depoimentos.html">Depoimentos</a></li>
-                <li><a href="equipe.html">Equipe de Vendas</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#introducao">Início</a></li>
+                    <li><a href="#modelos">Modelos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#depoimentos">Depoimentos</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
 
-    <!-- Seção de Introdução -->
+    <!-- Título Não Linear -->
+    <section id="hero">
+        <div class="hero-container">
+            <h1>CarDeal - Dirija Seus Sonhos</h1>
+            <p>Experimente atendimento personalizado, infraestrutura de ponta e uma ampla variedade de opções automotivas.</p>
+            <a href="#modelos" class="btn">Conheça os Modelos</a>
+        </div>
+    </section>
+
+    <!-- Outras Seções -->
     <section id="introducao">
-        <h1>Bem-vindo à Concessionária XYZ</h1>
-        <p>Na Concessionária XYZ, temos o prazer de oferecer uma vasta gama de veículos novos e seminovos, sempre com as melhores condições de pagamento e atendimento especializado.</p>
+        <h2>Bem-vindo à CarDeal</h2>
+        <p>A concessionária foi fundada há mais de 50 anos, com o objetivo de fornecer veículos de alta qualidade e excelente atendimento aos clientes. Ao longo dos anos, expandimos nossa Presença em todo o país, chegando a mais de 20 unidades. Investimos continuamente em tecnologia de ponta para oferecer uma experiência de compra e serviço incomparável.</p>
     </section>
 
-    <!-- Seção da História da Empresa -->
-    <section id="historia">
-        <h2>A História da Nossa Empresa</h2>
-        <p>A Concessionária XYZ foi fundada em 2005, com a missão de oferecer aos nossos clientes uma experiência de compra única e personalizada. Desde então, temos nos dedicado a oferecer os melhores veículos, com um atendimento de excelência e total transparência. Nosso compromisso é com a qualidade e com a satisfação dos nossos clientes, que se tornam parte da nossa história a cada venda realizada.</p>
-        <p>Ao longo dos anos, a Concessionária XYZ se tornou referência no mercado de automóveis da região, com uma equipe altamente qualificada e sempre pronta para atender as necessidades de quem busca qualidade e confiança na compra de um veículo.</p>
-    </section>
-
-    <!-- Seção de Modelos e Especificações -->
     <section id="modelos">
-        <h2>Modelos de Veículos</h2>
-        <p>Explore os diversos modelos de veículos que temos disponíveis para você. Confira as opções de carros novos e seminovos, com preços e condições imperdíveis.</p>
-        <a href="modelos.html" class="btn">Veja os Modelos</a>
+        <h2>Nossos Modelos</h2>
+        <p>Nesta seção, você descobrirá nossos modelos mais recentes, serviços exclusivos e o que torna nossa concessionária a melhor escolha para seus próximos passos rumo à sua próxima aquisição automotiva.</p>
+       
+        <!-- Modelos -->
+        <div class="modelos-container">
+            <!-- Sedãs -->
+            <div class="modelo">
+                <h3>Sedãs</h3>
+                <p>Elegantes, espaçosos e eficientes em combustível, nossos sedãs oferecem dirigibilidade suave e conforto premium.</p>
+                <img src="/img/17.webp" alt="Imagem de Sedãs">
+            </div>
+            <!-- SUVs -->
+            <div class="modelo">
+                <h3>SUVs</h3>
+                <p>Versáteis e capazes, nossos SUVs combinam alto desempenho com robustez, luxo e tecnologia de ponta.</p>
+                <img src="/img/SUV.jpg" alt="Imagem de SUVs">
+            </div>
+            <!-- Elétricos -->
+            <div class="modelo">
+                <h3>Elétricos</h3>
+                <p>Nossos veículos elétricos oferecem uma dirigibilidade suave, eficiência e sustentabilidade sem precedentes.</p>
+                <img src="/img/eletrico.webp" alt="Imagem de Veículos Elétricos">
+            </div>
+        </div>
+    </section>
+    
+    <section id="servicos">
+        <h2>O que Oferecemos</h2>
+        <ul>
+            <li><strong>Atendimento Personalizado:</strong> Nossa equipe está pronta para atender você de forma dedicada.</li>
+            <li><strong>Infraestrutura de Ponta:</strong> Um espaço moderno que transforma sua experiência de compra.</li>
+            <li><strong>Variedade de Opções:</strong> Modelos que atendem a todos os estilos e necessidades.</li>
+            <li><strong>Assistência Pós-Venda:</strong> Garantimos sua satisfação com serviços de manutenção de qualidade.</li>
+        </ul>
     </section>
 
-    <!-- Seção de Depoimentos -->
+    <section id="apresentacoes">
+        <h2>Apresentações</h2>
+        <div class="media-container">
+            <!-- Vídeo -->
+            <div class="media-item">
+                <h3>Vídeo do Modelo</h3>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta a tag de vídeo.
+                </video>
+            </div>
+    
+            <!-- GIF -->
+            <div class="media-item">
+                <h3>GIF Interativo</h3>
+                <img src="modelo.gif" alt="GIF do modelo">
+            </div>
+    
+            <!-- Áudio -->
+            <div class="media-item">
+                <h3>Áudio do Motor</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mpeg">
+                    Seu navegador não suporta a tag de áudio.
+                </audio>
+            </div>
+        </div>
+    </section>
+    
+
     <section id="depoimentos">
         <h2>O que nossos clientes dizem</h2>
-        <p>Confira os depoimentos de clientes satisfeitos que adquiriram seu veículo conosco. Eles contam suas experiências de compra e como foi o atendimento da nossa equipe.</p>
-        <a href="depoimentos.html" class="btn">Leia os Depoimentos</a>
+        <p>"Atendimento excepcional e veículos de qualidade. Recomendo a todos!"</p>
     </section>
 
-    <!-- Seção de Equipe de Vendas -->
-    <section id="equipe">
-        <h2>Conheça a nossa Equipe de Vendas</h2>
-        <p>A nossa equipe é formada por profissionais altamente qualificados, prontos para ajudar você a encontrar o veículo dos seus sonhos. Saiba mais sobre cada um de nossos consultores de vendas e entre em contato diretamente.</p>
-        <a href="equipe.html" class="btn">Conheça a Equipe</a>
-    </section>
-
-    <!-- Rodapé -->
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 Concessionária XYZ - Todos os direitos reservados.</p>
-            <p><a href="contato.html">Entre em contato conosco</a></p>
-        </div>
+        <p>&copy; 2024 CarDeal - Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
