@@ -1,12 +1,10 @@
-/* Estilo Global */
-
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    background-color: #333; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
+    background-color: #333; 
+    color: #ffffff; 
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
@@ -47,14 +45,14 @@ header .logo img {
 #hero h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Sombra no texto para legibilidade */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 #hero p {
     color: #ffffff;
     font-size: 1.5em;
     margin-bottom: 30px;
-    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); 
 }
 
 #hero .btn {
@@ -75,9 +73,9 @@ header .logo img {
 section {
     padding: 50px 20px;
     text-align: center;
-    background: #333; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
-    border-bottom: 1px solid #444; /* Linha divisória */
+    background: #333; 
+    color: #ffffff; 
+    border-bottom: 1px solid #444; 
 }
 
 section h2 {
@@ -88,7 +86,7 @@ section h2 {
 
 section p, section ul {
     font-size: 1.2em;
-    color: #d3d3d3; /* Texto cinza claro */
+    color: #d3d3d3; 
     line-height: 1.8;
 }
 
@@ -138,322 +136,19 @@ ul li {
 
 .menu nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* Links brancos */
+    color: #ffffff; 
     font-size: 1.2em;
     transition: color 0.3s ease;
 }
 
 .menu nav ul li a:hover {
-    color: #f39c12; /* Destaque laranja */
+    color: #f39c12; 
 }
-
-footer {
-    background-color: #000000;
-    color: #ffffff;
-    text-align: center;
-    padding: 20px 0;
-}
-
-footer .social-icons {
-    margin-top: 10px;
-}
-
-footer .social-icons a {
-    margin: 0 10px;
-}
-
-footer .social-icons img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-footer .social-icons img:hover {
-    transform: scale(1.2); /* Zoom ao passar o mouse */
-}
-
-
-
-/* Seção de Apresentações */
-/* Seção de Apresentações */
-#apresentacoes {
-    padding: 50px 20px;
-    text-align: center;
-    background: #333; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
-    border-bottom: 1px solid #444; /* Linha divisória */
-}
-
-#apresentacoes h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white; /* Destaque em branco */
-}
-
-.media-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-/* Estilo dos Itens */
-.media-item {
-    background: #444; /* Fundo cinza escuro */
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    flex: 1 1 300px;
-    max-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
-}
-
-.media-item:hover {
-    transform: scale(1.05); /* Aumenta o tamanho levemente */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adiciona profundidade */
-}
-
-/* Títulos */
-.media-item h3 {
-    font-size: 1.5em;
-    color: #ffffff;
-    margin-bottom: 15px;
-    transition: color 0.3s ease; /* Transição para cor */
-}
-
-.media-item h3:hover {
-    color: #f39c12; /* Destaca o título em laranja */
-}
-
-/* Vídeos, GIFs e Áudio */
-.media-item iframe,
-.media-item video,
-.media-item audio {
-    width: 100%; /* Ajusta para ocupar a largura do card */
-    border-radius: 8px; /* Bordas arredondadas */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transição para zoom e brilho */
-}
-
-.media-item iframe:hover,
-.media-item video:hover {
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
-    filter: brightness(1.2); /* Aumenta o brilho */
-}
-
-.media-item audio:hover {
-    filter: brightness(1.1); /* Realce suave no áudio */
-}
-
-/* Links */
-.media-item p a {
-    color: #e67e22; /* Cor do link */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Transição para cor */
-}
-
-.media-item p a:hover {
-    color: #f39c12; /* Muda para laranja */
-    text-decoration: underline;
-}
-
-
-
-#titulo {
-    text-align: center;
-    background: linear-gradient(135deg, #1c1f26, #3a3f4a); /* Fundo degradê escuro */
-    color: #ffffff; /* Texto branco */
-    padding: 30px 20px;
-}
-
-#titulo h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-#titulo p {
-    font-size: 1.2em;
-    color: #d3d3d3; /* Texto em cinza claro */
-}
-
-/* Seção de Modelos */
-#modelos {
-    padding: 50px 20px;
-    text-align: center;
-    background: #333;
-    color: #ffffff;
-    border-bottom: 1px solid #444;
-}
-
-#modelos h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white;
-}
-
-#modelos p {
-    font-size: 1.2em;
-    color: #d3d3d3;
-    margin-bottom: 30px;
-}
-
-/* Container do Carrossel */
-.carousel-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    margin: 0 auto;
-    max-width: 80%; /* Limita a largura do carrossel */
-}
-
-.carousel-track {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.5s ease;
-}
-
-/* Cartões do Carrossel */
-.modelo {
-    flex: 0 0 auto;
-    width: 300px;
-    background: #444;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.modelo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
-}
-
-/* Botões do Carrossel */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5em;
-    transition: background 0.3s ease;
-    z-index: 2;
-}
-
-.carousel-btn:hover {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.carousel-btn.prev {
-    left: 10px;
-}
-
-.carousel-btn.next {
-    right: 10px;
-}
-
-/* Imagens dos Modelos */
-.modelo img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-}
-
-
-
-
-
-/* Seção de Depoimentos */
-#depoimentos {
-    padding: 50px 20px;
-    background: #222; /* Fundo mais escuro */
-    color: #ffffff;
-    text-align: center;
-}
-
-#depoimentos h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: white; /* Texto principal */
-}
-
-.depoimentos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-/* Cartões de Depoimentos */
-.depoimento {
-    background: #444;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    max-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
-}
-
-.depoimento:hover {
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adiciona profundidade */
-}
-
-/* Imagens nos Depoimentos */
-.depoimento img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; /* Formato circular */
-    margin-bottom: 10px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
-}
-
-.depoimento img:hover {
-    transform: scale(1.1); /* Zoom leve */
-    filter: brightness(1.2); /* Aumenta o brilho */
-}
-
-/* Texto dos Depoimentos */
-.depoimento p {
-    font-size: 1em;
-    color: #d3d3d3; /* Texto cinza claro */
-    margin-bottom: 10px;
-    transition: color 0.3s ease; /* Animação de cor */
-}
-
-.depoimento:hover p {
-    color: #f39c12; /* Muda para laranja no hover */
-}
-
-/* Nome do Cliente */
-.depoimento span {
-    color: #e67e22;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: color 0.3s ease; /* Animação de cor */
-}
-
-.depoimento:hover span {
-    color: #f39c12; /* Muda para um laranja mais brilhante no hover */
-}
-
 
 /* Seção Destaques */
 #destaques {
     padding: 50px 20px;
-    background: linear-gradient(135deg, #1c1f26, #333); /* Fundo degradê */
+    background: linear-gradient(135deg, #1c1f26, #333); 
     color: #ffffff;
     text-align: center;
 }
@@ -461,7 +156,7 @@ footer .social-icons img:hover {
 #destaques h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #e67e22; /* Título com cor destaque */
+    color: #e67e22; 
 }
 
 #destaques p {
@@ -481,19 +176,19 @@ footer .social-icons img:hover {
     background: #444;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
     text-align: center;
     max-width: 300px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .destaque:hover {
-    transform: translateY(-5px); /* Efeito de destaque */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); /* Aumenta a sombra */
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7); 
 }
 
 .destaque img {
-    width: 100%; /* Adapta a imagem ao contêiner */
+    width: 100%; 
     border-radius: 8px;
     margin-bottom: 15px;
 }
@@ -511,7 +206,7 @@ footer .social-icons img:hover {
 
 .desconto, .destaque-texto {
     font-weight: bold;
-    color: #f39c12; /* Destaque nos textos promocionais */
+    color: #f39c12; 
 }
 
 .destaque .btn {
@@ -527,36 +222,246 @@ footer .social-icons img:hover {
 }
 
 .destaque .btn:hover {
-    background: #d35400; /* Altera a cor ao passar o mouse */
+    background: #d35400; 
 }
 
-/* Seção da Equipe */
-#equipe {
+#modelos {
     padding: 50px 20px;
     text-align: center;
-    background: #333; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
-    border-bottom: 1px solid #444; /* Linha divisória */
+    background: #333; 
+    color: #ffffff; 
+    border-bottom: 1px solid #444; 
 }
 
-#equipe h2 {
+#modelos h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: white;
+    color: white; 
 }
 
-#equipe p {
+#modelos p {
     font-size: 1.2em;
-    color: #d3d3d3; /* Texto cinza claro */
+    color: #d3d3d3; 
     margin-bottom: 30px;
+}
+
+.modelos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.modelo {
+    background: #444; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 300px;
+}
+
+.modelo img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+}
+
+.modelo h3 {
+    font-size: 1.8em;
+    color: white; 
+    margin-bottom: 10px;
+}
+
+.modelo p {
+    font-size: 1em;
+    color: #d3d3d3; 
+    line-height: 1.5;
+}
+
+/* Itens de Serviço */
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+    margin: 0 auto; 
+}
+
+.servico-item {
+    background: #444; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 300px;
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.servico-item:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); 
+}
+
+/* Imagens */
+.servico-item img {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    margin-bottom: 15px; 
+    transition: filter 0.3s ease; 
+}
+
+.servico-item img:hover {
+    filter: brightness(1.2); 
+}
+
+/* Títulos */
+.servico-item h3 {
+    font-size: 1.8em;
+    color: white; 
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.servico-item p {
+    font-size: 1em;
+    color: #d3d3d3; 
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Seção de Apresentações */
+#apresentacoes {
+    padding: 50px 20px;
+    text-align: center;
+    background: #333; 
+    color: #ffffff; 
+    border-bottom: 1px solid #444; 
+}
+
+#apresentacoes h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+.media-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.media-item {
+    background: #444; 
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    flex: 1 1 300px;
+    max-width: 300px;
+}
+
+.media-item h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.media-item video,
+.media-item img,
+.media-item audio {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.media-item audio {
+    margin-top: 10px;
+    outline: none;
+}
+
+.media-item iframe {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.media-item p a {
+    color: #e67e22; 
+    text-decoration: none;
+}
+
+.media-item p a:hover {
+    text-decoration: underline;
+}
+
+#titulo {
+    text-align: center;
+    background: linear-gradient(135deg, #1c1f26, #3a3f4a); 
+    color: #ffffff; 
+    padding: 30px 20px;
+}
+
+#titulo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#titulo p {
+    font-size: 1.2em;
+    color: #d3d3d3; 
+}
+
+#depoimentos {
+    padding: 50px 20px;
+    background: #222; 
+    color: #ffffff;
+    text-align: center;
+}
+
+.depoimentos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.depoimento {
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.depoimento img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.depoimento span {
+    color: #e67e22;
+    font-weight: bold;
 }
 
 /* Container da equipe */
 .equipe-container {
-    display: flex; /* Ativa o Flexbox */
-    flex-wrap: wrap; /* Permite quebra de linha em telas menores */
-    justify-content: center; /* Centraliza os membros */
-    gap: 20px; /* Espaçamento entre os membros */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
 }
 
 /* Card de cada membro */
@@ -565,53 +470,36 @@ footer .social-icons img:hover {
     padding: 20px;
     border-radius: 8px;
     text-align: center;
-    width: 250px; /* Largura fixa para os cards */
+    width: 250px; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .membro:hover {
-    transform: translateY(-5px); /* Destaque ao passar o mouse */
+    transform: translateY(-5px); 
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
 }
 
 /* Imagem do membro */
 .membro img {
-    width: 100px; /* Tamanho fixo da imagem */
-    height: 100px; /* Proporção igual para largura e altura */
-    border-radius: 50%; /* Deixa a imagem redonda */
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
     margin-bottom: 15px;
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transições suaves */
-}
-
-.membro img:hover {
-    transform: scale(1.1); /* Zoom leve */
-    filter: brightness(1.2); /* Aumenta o brilho */
 }
 
 /* Nome do membro */
 .membro h3 {
     font-size: 1.5em;
-    color: #e67e22; /* Cor destaque */
+    color: #e67e22; 
     margin-bottom: 10px;
-    transition: color 0.3s ease; /* Transição suave para cor */
-}
-
-.membro:hover h3 {
-    color: #f39c12; /* Muda para laranja mais brilhante no hover */
 }
 
 /* Cargo do membro */
 .membro p {
     font-size: 1.1em;
     color: #d3d3d3;
-    transition: color 0.3s ease; /* Transição suave para cor */
 }
-
-.membro:hover p {
-    color: #ffffff; /* Torna o texto branco no hover */
-}
-
 
 
 #contato {
@@ -672,61 +560,27 @@ footer .social-icons img:hover {
     background: #d35400;
 }
 
-/* Container de Serviços */
-.servicos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: stretch; /* Garante que todos os itens tenham a mesma altura */
-    gap: 20px; /* Espaçamento entre os itens */
-    margin: 0 auto;
-}
-
-/* Itens de Serviço */
-.servico-item {
-    background: #444; /* Fundo cinza escuro */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+footer {
+    background-color: #000000;
+    color: #ffffff;
     text-align: center;
-    max-width: 300px;
-    flex: 1 1 300px;
-    display: flex;
-    flex-direction: column; /* Garante que os elementos internos fiquem empilhados */
-    justify-content: space-between; /* Distribui o espaço interno */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+    padding: 20px 0;
 }
 
-.servico-item:hover {
-    transform: scale(1.05); /* Aumenta levemente o tamanho */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adiciona mais profundidade */
+footer .social-icons {
+    margin-top: 10px;
 }
 
-/* Imagens */
-.servico-item img {
-    width: 100%; /* Ajusta a imagem para ocupar a largura do card */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-bottom: 15px; /* Espaço entre a imagem e o texto */
-    transition: filter 0.3s ease; /* Transição suave para o brilho */
+footer .social-icons a {
+    margin: 0 10px;
 }
 
-.servico-item img:hover {
-    filter: brightness(1.2); /* Aumenta o brilho da imagem */
+footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
 }
 
-/* Títulos */
-.servico-item h3 {
-    font-size: 1.8em;
-    color: white; 
-    margin-bottom: 10px;
+footer .social-icons img:hover {
+    transform: scale(1.2); 
 }
-
-/* Texto */
-.servico-item p {
-    font-size: 1em;
-    color: #d3d3d3; /* Texto cinza claro */
-    line-height: 1.5;
-    margin-bottom: 15px; /* Espaçamento entre texto e imagem */
-}
-
