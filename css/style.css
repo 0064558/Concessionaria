@@ -536,16 +536,17 @@ footer .social-icons img:hover {
     background: #d35400;
 }
 
-/* Itens de Serviço */
+/* Container de Serviços */
 .servicos-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alinha os itens horizontalmente no centro */
-    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: stretch; /* Garante que todos os itens tenham a mesma altura */
     gap: 20px; /* Espaçamento entre os itens */
-    margin: 0 auto; /* Garante que o container esteja centralizado */
+    margin: 0 auto;
 }
 
+/* Itens de Serviço */
 .servico-item {
     background: #444; /* Fundo cinza escuro */
     padding: 20px;
@@ -554,6 +555,9 @@ footer .social-icons img:hover {
     text-align: center;
     max-width: 300px;
     flex: 1 1 300px;
+    display: flex;
+    flex-direction: column; /* Garante que os elementos internos fiquem empilhados */
+    justify-content: space-between; /* Distribui o espaço interno */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
 
@@ -587,5 +591,5 @@ footer .social-icons img:hover {
     font-size: 1em;
     color: #d3d3d3; /* Texto cinza claro */
     line-height: 1.5;
+    margin-bottom: 15px; /* Espaçamento entre texto e imagem */
 }
-
