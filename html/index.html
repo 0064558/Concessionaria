@@ -12,14 +12,15 @@
     <!-- Cabeçalho -->
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Logo da CarDeal">
+            <img src="logo.png" alt="">
         </div>
         <div class="menu">
             <nav>
                 <ul>
-                    <li><a href="#introducao">Início</a></li>
+                    <li><a href="#introducao">Home</a></li>
                     <li><a href="#modelos">Modelos</a></li>
                     <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#apresentacoes">Apresentações</a></li>
                     <li><a href="#depoimentos">Depoimentos</a></li>
                     <li><a href="#equipe">Equipe</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -38,6 +39,23 @@
         </div>
     </section>
 
+    <!-- Destaques Section -->
+<section id="destaques">
+    <h2>Ofertas Imperdíveis</h2>
+    <div class="destaques-container">
+        <div class="destaque">
+            <img src="/img/promocao-sedan.png" alt="Promoção Sedan">
+            <h3>Sedan Premium</h3>
+            <p>Compre agora com 20% de desconto.</p>
+        </div>
+        <div class="destaque">
+            <img src="/img/promocao-suv.png" alt="Promoção SUV">
+            <h3>SUV Compacto</h3>
+            <p>Taxa 0% em até 48x.</p>
+        </div>
+    </div>
+</section>
+
     <!-- Outras Seções -->
     <section id="introducao">
         <h2>Bem-vindo à CarDeal</h2>
@@ -54,19 +72,19 @@
             <div class="modelo">
                 <h3>Sedãs</h3>
                 <p>Elegantes, espaçosos e eficientes em combustível, nossos sedãs oferecem dirigibilidade suave e conforto premium.</p>
-                <img src="/img/17.webp" alt="Imagem de Sedãs">
+                <img src="/img/car-6.png" alt="Imagem de Sedãs">
             </div>
             <!-- SUVs -->
             <div class="modelo">
                 <h3>SUVs</h3>
                 <p>Versáteis e capazes, nossos SUVs combinam alto desempenho com robustez, luxo e tecnologia de ponta.</p>
-                <img src="/img/SUV.jpg" alt="Imagem de SUVs">
+                <img src="/img/car-4.png" alt="Imagem de SUVs">
             </div>
             <!-- Elétricos -->
             <div class="modelo">
                 <h3>Elétricos</h3>
                 <p>Nossos veículos elétricos oferecem uma dirigibilidade suave, eficiência e sustentabilidade sem precedentes.</p>
-                <img src="/img/eletrico.webp" alt="Imagem de Veículos Elétricos">
+                <img src="/img/cybertruck.png" alt="Imagem de Veículos Elétricos">
             </div>
         </div>
     </section>
@@ -83,41 +101,71 @@
 
     <section id="apresentacoes">
         <h2>Apresentações</h2>
-        <div class="media-container">
             <!-- Vídeo -->
-            <div class="media-item">
-                <h3>Vídeo do Modelo</h3>
-                <video controls>
-                    <source src="video.mp4" type="video/mp4">
-                    Seu navegador não suporta a tag de vídeo.
-                </video>
-            </div>
+            <div class="media-container">
+                <!-- Vídeo do YouTube -->
+                <div class="media-item">
+                    <h3>Tesla Cybertruck</h3>
+                    <iframe 
+                        src="https://www.youtube.com/embed/FjS2LzrHEO8" 
+                        width="560" 
+                        height="315" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
     
             <!-- GIF -->
             <div class="media-item">
-                <h3>GIF Interativo</h3>
-                <img src="modelo.gif" alt="GIF do modelo">
+                <h3>GM Silverado</h3>
+                <iframe src="https://giphy.com/embed/XoNmzFN80qc1DVfsRR" 
+                        width="480" 
+                        height="271" 
+                        frameborder="0" 
+                        class="giphy-embed" 
+                        allowfullscreen>
+                </iframe>
+                <p>
+                    <a href="https://giphy.com/gifs/chevrolet-chevy-silverado-ev-electric-XoNmzFN80qc1DVfsRR" target="_blank"></a>
+                </p>
             </div>
     
             <!-- Áudio -->
             <div class="media-item">
                 <h3>Áudio do Motor</h3>
                 <audio controls>
-                    <source src="audio.mp3" type="audio/mpeg">
+                    <source src="/img/ronco-motor.mpeg" type="audio/mpeg">
                     Seu navegador não suporta a tag de áudio.
                 </audio>
             </div>
         </div>
     </section>
-    
 
     <section id="depoimentos">
         <h2>O que nossos clientes dizem</h2>
-        <p>"Atendimento excepcional e veículos de qualidade. Recomendo a todos!"</p>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <img src="/img/pic-1.png" alt="Cliente feliz">
+                <p>"Atendimento excepcional e veículos de qualidade. Recomendo a todos!"</p>
+                <span>- João Silva</span>
+            </div>
+            <div class="depoimento">
+                <img src="/img/pic-2.png" alt="Cliente satisfeito">
+                <p>"Meu novo veículo superou todas as expectativas."</p>
+                <span>- Maria Oliveira</span>
+            </div>
+        </div>
     </section>
-
+    
     <footer>
-        <p>&copy; 2024 CarDeal - Todos os direitos reservados.</p>
+        <span><p>&copy; 2024 CarDeal - Todos os direitos reservados.</p></span>
+        <div class="social-icons">
+            <a href="#"><img src="/img/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="/img/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
+        </div>
     </footer>
+    
 </body>
 </html>
