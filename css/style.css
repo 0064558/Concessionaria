@@ -175,6 +175,7 @@ footer .social-icons img:hover {
 
 
 /* Seção de Apresentações */
+/* Seção de Apresentações */
 #apresentacoes {
     padding: 50px 20px;
     text-align: center;
@@ -186,7 +187,7 @@ footer .social-icons img:hover {
 #apresentacoes h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: white; /* Destaque em laranja */
+    color: white; /* Destaque em branco */
 }
 
 .media-container {
@@ -197,6 +198,7 @@ footer .social-icons img:hover {
     margin-top: 20px;
 }
 
+/* Estilo dos Itens */
 .media-item {
     background: #444; /* Fundo cinza escuro */
     border-radius: 8px;
@@ -205,41 +207,57 @@ footer .social-icons img:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     flex: 1 1 300px;
     max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição suave */
 }
 
+.media-item:hover {
+    transform: scale(1.05); /* Aumenta o tamanho levemente */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adiciona profundidade */
+}
+
+/* Títulos */
 .media-item h3 {
     font-size: 1.5em;
     color: #ffffff;
     margin-bottom: 15px;
+    transition: color 0.3s ease; /* Transição para cor */
 }
 
+.media-item h3:hover {
+    color: #f39c12; /* Destaca o título em laranja */
+}
+
+/* Vídeos, GIFs e Áudio */
+.media-item iframe,
 .media-item video,
-.media-item img,
 .media-item audio {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.media-item audio {
-    margin-top: 10px;
-    outline: none;
-}
-
-.media-item iframe {
     width: 100%; /* Ajusta para ocupar a largura do card */
-    height: auto; /* Mantém proporção */
     border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Adiciona sombra */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição para zoom e brilho */
 }
 
+.media-item iframe:hover,
+.media-item video:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    filter: brightness(1.2); /* Aumenta o brilho */
+}
+
+.media-item audio:hover {
+    filter: brightness(1.1); /* Realce suave no áudio */
+}
+
+/* Links */
 .media-item p a {
     color: #e67e22; /* Cor do link */
     text-decoration: none;
+    transition: color 0.3s ease; /* Transição para cor */
 }
 
 .media-item p a:hover {
+    color: #f39c12; /* Muda para laranja */
     text-decoration: underline;
 }
+
 
 
 #titulo {
@@ -259,70 +277,116 @@ footer .social-icons img:hover {
     color: #d3d3d3; /* Texto em cinza claro */
 }
 
-/* Modelos */
-/* Seção de Modelos */
 /* Seção de Modelos */
 #modelos {
     padding: 50px 20px;
     text-align: center;
-    background: #333; /* Fundo escuro */
-    color: #ffffff; /* Texto branco */
-    border-bottom: 1px solid #444; /* Linha divisória */
+    background: #333;
+    color: #ffffff;
+    border-bottom: 1px solid #444;
 }
 
 #modelos h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: white; /* Destaque em laranja */
+    color: white;
 }
 
 #modelos p {
     font-size: 1.2em;
-    color: #d3d3d3; /* Texto cinza claro */
+    color: #d3d3d3;
     margin-bottom: 30px;
 }
 
-.modelos-container {
+/* Container do Carrossel */
+.carousel-container {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 80%; /* Limita a largura do carrossel */
 }
 
+.carousel-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+/* Cartões do Carrossel */
 .modelo {
-    background: #444; /* Fundo cinza escuro */
+    flex: 0 0 auto;
+    width: 300px;
+    background: #444;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
     text-align: center;
-    max-width: 300px;
-    flex: 1 1 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.modelo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Botões do Carrossel */
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    transition: background 0.3s ease;
+    z-index: 2;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-btn.prev {
+    left: 10px;
+}
+
+.carousel-btn.next {
+    right: 10px;
+}
+
+/* Imagens dos Modelos */
 .modelo img {
-    width: 100%; /* Ajusta a imagem para ocupar a largura do card */
-    height: auto; /* Mantém a proporção da imagem */
-    border-radius: 8px; /* Bordas arredondadas */
-    margin-bottom: 15px; /* Espaço entre a imagem e o texto */
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.modelo h3 {
-    font-size: 1.8em;
-    color: white; /* Títulos em laranja */
-    margin-bottom: 10px;
-}
 
-.modelo p {
-    font-size: 1em;
-    color: #d3d3d3; /* Texto cinza claro */
-    line-height: 1.5;
-}
 
+
+
+/* Seção de Depoimentos */
 #depoimentos {
     padding: 50px 20px;
     background: #222; /* Fundo mais escuro */
     color: #ffffff;
     text-align: center;
+}
+
+#depoimentos h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white; /* Texto principal */
 }
 
 .depoimentos-container {
@@ -332,25 +396,59 @@ footer .social-icons img:hover {
     gap: 20px;
 }
 
+/* Cartões de Depoimentos */
 .depoimento {
     background: #444;
     padding: 20px;
     border-radius: 8px;
     text-align: center;
     max-width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animação suave */
 }
 
+.depoimento:hover {
+    transform: scale(1.05); /* Aumenta levemente o tamanho */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7); /* Adiciona profundidade */
+}
+
+/* Imagens nos Depoimentos */
 .depoimento img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 50%; /* Formato circular */
     margin-bottom: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave */
 }
 
+.depoimento img:hover {
+    transform: scale(1.1); /* Zoom leve */
+    filter: brightness(1.2); /* Aumenta o brilho */
+}
+
+/* Texto dos Depoimentos */
+.depoimento p {
+    font-size: 1em;
+    color: #d3d3d3; /* Texto cinza claro */
+    margin-bottom: 10px;
+    transition: color 0.3s ease; /* Animação de cor */
+}
+
+.depoimento:hover p {
+    color: #f39c12; /* Muda para laranja no hover */
+}
+
+/* Nome do Cliente */
 .depoimento span {
     color: #e67e22;
     font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease; /* Animação de cor */
 }
+
+.depoimento:hover span {
+    color: #f39c12; /* Muda para um laranja mais brilhante no hover */
+}
+
 
 /* Seção Destaques */
 #destaques {
@@ -432,6 +530,27 @@ footer .social-icons img:hover {
     background: #d35400; /* Altera a cor ao passar o mouse */
 }
 
+/* Seção da Equipe */
+#equipe {
+    padding: 50px 20px;
+    text-align: center;
+    background: #333; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    border-bottom: 1px solid #444; /* Linha divisória */
+}
+
+#equipe h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#equipe p {
+    font-size: 1.2em;
+    color: #d3d3d3; /* Texto cinza claro */
+    margin-bottom: 30px;
+}
+
 /* Container da equipe */
 .equipe-container {
     display: flex; /* Ativa o Flexbox */
@@ -462,6 +581,12 @@ footer .social-icons img:hover {
     height: 100px; /* Proporção igual para largura e altura */
     border-radius: 50%; /* Deixa a imagem redonda */
     margin-bottom: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transições suaves */
+}
+
+.membro img:hover {
+    transform: scale(1.1); /* Zoom leve */
+    filter: brightness(1.2); /* Aumenta o brilho */
 }
 
 /* Nome do membro */
@@ -469,13 +594,24 @@ footer .social-icons img:hover {
     font-size: 1.5em;
     color: #e67e22; /* Cor destaque */
     margin-bottom: 10px;
+    transition: color 0.3s ease; /* Transição suave para cor */
+}
+
+.membro:hover h3 {
+    color: #f39c12; /* Muda para laranja mais brilhante no hover */
 }
 
 /* Cargo do membro */
 .membro p {
     font-size: 1.1em;
     color: #d3d3d3;
+    transition: color 0.3s ease; /* Transição suave para cor */
 }
+
+.membro:hover p {
+    color: #ffffff; /* Torna o texto branco no hover */
+}
+
 
 
 #contato {
@@ -593,3 +729,4 @@ footer .social-icons img:hover {
     line-height: 1.5;
     margin-bottom: 15px; /* Espaçamento entre texto e imagem */
 }
+

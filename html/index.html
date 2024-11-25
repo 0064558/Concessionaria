@@ -75,46 +75,48 @@
     <section id="modelos">
         <h2>Nossos Modelos</h2>
         <p>Nesta seção, você descobrirá nossos modelos mais recentes, serviços exclusivos e o que torna nossa concessionária a melhor escolha para seus próximos passos rumo à sua próxima aquisição automotiva.</p>
-       
-        <!-- Modelos -->
-        <div class="modelos-container">
-            <!-- Sedãs -->
-            <div class="modelo">
-                <h3>Sedãs</h3>
-                <p>Elegantes, espaçosos e eficientes em combustível, nossos sedãs oferecem dirigibilidade suave e conforto premium.</p>
-                <img src="/img/car-6.png" alt="Imagem de Sedãs">
+        
+        <!-- Container do Carrossel -->
+        <div class="carousel-container">
+            <button class="carousel-btn prev" aria-label="Anterior">❮</button>
+            <div class="carousel-track">
+                <!-- Modelos -->
+                <div class="modelo">
+                    <h3>Sedãs</h3>
+                    <p>Elegantes, espaçosos e eficientes em combustível, nossos sedãs oferecem dirigibilidade suave e conforto premium.</p>
+                    <img src="/img/car-6.png" alt="Imagem de Sedãs">
+                </div>
+                <div class="modelo">
+                    <h3>SUVs</h3>
+                    <p>Versáteis e capazes, nossos SUVs combinam alto desempenho com robustez, luxo e tecnologia de ponta.</p>
+                    <img src="/img/car-4.png" alt="Imagem de SUVs">
+                </div>
+                <div class="modelo">
+                    <h3>Elétricos</h3>
+                    <p>Nossos veículos elétricos oferecem uma dirigibilidade suave, eficiência e sustentabilidade sem precedentes.</p>
+                    <img src="/img/cybertruck.png" alt="Imagem de Veículos Elétricos">
+                </div>
+                <div class="modelo">
+                    <h3>Esportivos</h3>
+                    <p>Desempenho excepcional, design arrojado e tecnologia de ponta definem nossos modelos esportivos.</p>
+                    <img src="/img/car-3.png" alt="Imagem de Veículos Esportivos">
+                </div>
+                <div class="modelo">
+                    <h3>Clássicos</h3>
+                    <p>Veículos icônicos e colecionáveis que combinam história, design e desempenho.</p>
+                    <img src="/img/car-1.png" alt="Imagem de Veículos Clássicos">
+                </div>
+                <div class="modelo">
+                    <h3>Porsche</h3>
+                    <p>Desempenho excepcional, design arrojado e tecnologia de ponta definem nossos modelos esportivos.</p>
+                    <img src="/img/car-2.png" alt="Imagem de Porsche">
+                </div>
             </div>
-            <!-- SUVs -->
-            <div class="modelo">
-                <h3>SUVs</h3>
-                <p>Versáteis e capazes, nossos SUVs combinam alto desempenho com robustez, luxo e tecnologia de ponta.</p>
-                <img src="/img/car-4.png" alt="Imagem de SUVs">
-            </div>
-            <!-- Elétricos -->
-            <div class="modelo">
-                <h3>Elétricos</h3>
-                <p>Nossos veículos elétricos oferecem uma dirigibilidade suave, eficiência e sustentabilidade sem precedentes.</p>
-                <img src="/img/cybertruck.png" alt="Imagem de Veículos Elétricos">
-            </div>
-
-            <div class="modelo">
-                <h3>Esportivos</h3>
-                <p>Desempenho excepcional, design arrojado e tecnologia de ponta definem nossos modelos esportivos.</p>
-                <img src="/img/car-3.png" alt="Imagem de Veículos Esportivos">
-            </div>
-
-            <div class="modelo">
-                <h3>Esportivos</h3>
-                <p>Veículos icônicos e colecionáveis que combinam história, design e desempenho.</p>
-                <img src="/img/car-1.png" alt="Imagem de Veículos Clássicos">   
-            </div>
-
-            <div class="modelo">
-                <h3>Porsche</h3>
-                <p>Desempenho excepcional, design arrojado e tecnologia de ponta definem nossos modelos esportivos.</p>
-                <img src="/img/car-2.png" alt="Imagem de Veículos Esportivos">
+            <button class="carousel-btn next" aria-label="Próximo">❯</button>
         </div>
     </section>
+    
+    
     
     <section id="servicos">
         <h2>O que oferecemos?</h2>
@@ -262,6 +264,33 @@
             <a href="#"><img src="/img/twitter.png" alt="Twitter"></a>
         </div>
     </footer>
+
+    <script>
+        // Função para mover o carrossel para a esquerda
+        const prevButton = document.querySelector('.prev');
+        const nextButton = document.querySelector('.next');
+        const carouselTrack = document.querySelector('.carousel-track');
+        let currentIndex = 0;
+
+        const moveCarousel = (direction) => {
+            const modelos = document.querySelectorAll('.modelo');
+            const totalItems = modelos.length;
+
+            // Calcula o próximo índice baseado na direção
+            currentIndex = (currentIndex + direction + totalItems) % totalItems;
+
+            // Calcula a nova posição de scroll
+            const newOffset = -currentIndex * (modelos[0].offsetWidth + 20); // +20 é o espaço entre os itens
+
+            // Move o carrossel
+            carouselTrack.style.transform = `translateX(${newOffset}px)`;
+        };
+
+        // Eventos dos botões
+        prevButton.addEventListener('click', () => moveCarousel(-1));
+        nextButton.addEventListener('click', () => moveCarousel(1));
+
+    </script>
     
 </body>
 </html>
