@@ -537,6 +537,15 @@ footer .social-icons img:hover {
 }
 
 /* Itens de Serviço */
+.servicos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinha os itens horizontalmente no centro */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0 auto; /* Garante que o container esteja centralizado */
+}
+
 .servico-item {
     background: #444; /* Fundo cinza escuro */
     padding: 20px;
@@ -579,3 +588,4 @@ footer .social-icons img:hover {
     color: #d3d3d3; /* Texto cinza claro */
     line-height: 1.5;
 }
+
